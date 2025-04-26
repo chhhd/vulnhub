@@ -51,7 +51,7 @@ python exploit.py -a https://localhost:30443/networking/v1/ingresses -i http://l
 
 exploit이 성공하면 ingress-nginx 컨테이너 내부에 파일이 <kbd>ssl_engine</kbd> 생성되는 것을 확인할 수 있다.
 
-![image](https://github.com/user-attachments/assets/c096e0dc-e7fb-4058-b21f-93f701301f29)
+
 
 
 
