@@ -10,9 +10,9 @@ Ingress-NGINX: NGINX를 역방향 프록시 및 로드 밸런서로 사용하는
 
 일부 악용 가능한 체인은 다음과 같다.
 
-CVE-2025-1974+CVE-2025-24514: <kdb>auth-url</kdb> 주석 주입을 통한 RCE
+CVE-2025-1974+CVE-2025-24514: <kbd>auth-url</kbd> 주석 주입을 통한 RCE
 
-CVE-2025-1974+CVE-2025-1097: <kdb>auth-tls-match-cn</kdb> 주석을 통한 RCE
+CVE-2025-1974+CVE-2025-1097: <kbd>auth-tls-match-cn</kbd> 주석을 통한 RCE
 
 CVE-2025-1974+CVE-2025-1098: 이미지 UID 남용을 통한 RCE
 
