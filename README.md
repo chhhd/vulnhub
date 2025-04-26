@@ -1,4 +1,4 @@
-# Kubernets Ingress-NGINX 인증되지 않은 원격 코드 실행(CVE-2025-1974)
+# Kubernetes Ingress-NGINX 인증되지 않은 원격 코드 실행(CVE-2025-1974)
 
 Ingress-NGINX: NGINX를 역방향 프록시 및 로드 밸런서로 사용하는 Kubernetes 용 인그레스 컨트롤러
 
