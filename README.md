@@ -26,7 +26,7 @@ docker compose up -d
 쿠버네티스 API가 준비되고 Ingress-nginx 컨트롤러가 시작될 때까지 기다린다.
 환경이 시작되면, Ingress-NGINX는 30080번과 30443번 포트(TLS)에서 수신 대기하고, Ingress-NGINX Admission Controller는 30443번 포트이다.
 
-## 취약성 재생산
+## 실행과정
 <kbd>.so</kbd> 먼저, 컨테이너의 아키텍처와 일치하는 공유 객체( ) 페이로드를 컴파일해야 한다.
 ```
 #include<stdio.h>
@@ -52,6 +52,9 @@ python3 poc.py -a https://localhost:30443/networking/v1/ingresses -i http://loca
 <kbd>AdmissionReview</kbd> exploit은 NGINX가 악성 동적 공유 객체를 로드하도록 강제하는 지시어 주입 요청을 위조하여 작동한다.
 
 exploit이 성공하면 ingress-nginx 컨테이너 내부에 파일이 <kbd>ssl_engine</kbd> 생성되는 것을 확인할 수 있다.
+
+![image](https://github.com/user-attachments/assets/c40e509a-ec91-4434-918a-abee88ed3d24)
+
 
 
 
